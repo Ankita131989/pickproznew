@@ -1,0 +1,5 @@
+name = PickProz Custom
+description = Custom functions for PickProz
+core = 7.x
+package = PickProz
+

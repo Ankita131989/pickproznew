@@ -1,0 +1,945 @@
+<?php
+/**
+ * Tinypass
+ * ------------------------------------------------------------------------
+ * @author    TinyPass, Inc
+ * @copyright Copyright (C) 2011 tinypass.com. All Rights Reserved.
+ * @license - http://www.gnu.org/licenses/lgpl-3.0.html GNU/LGPL
+ * Websites: http://tinypass.com
+ * Technical Support: http://developer.tinypass.com
+ */
+
+/**
+ * Implements hook_perm().
+ */
+function tinypass_permission() {
+	return array(
+					'administer tinypass' => array(
+									'title' => t('Administer TinyPass'),
+					),
+					'set tinypass on node' => array(
+									'title' => t('Set TinyPass options on Node'),
+					),
+					'set tinypass on term' => array(
+									'title' => t('Set TinyPass options on tags/terms'),
+					),
+					'skip tinypass for node' => array(
+									'title' => t('Skip TinyPass when viewing content'),
+					),
+	);
+}
+
+/**
+ * Implements tinypass_theme().
+ */
+function tinypass_theme($existing, $type, $theme, $path) {
+	return array(
+					'tinypass_options_display' => array(
+									'render element' => 'form',
+									'template' => 'node_options_display',
+					),
+					'tinypass_denied_access' => array(
+									'arguments' => array('button_html' => NULL, 'access_message' => NULL),
+									'template' => 'tinypass_denied_access',
+					),
+					'tinypass_tag_list_display' => array(
+									'arguments' => array('rows' => NULL, 'access_message' => NULL),
+									'template' => 'tag_list_display',
+					),
+					'tinypass_edit_tag_form' => array(
+									'render element' => 'form',
+									'template' => 'tag_edit_form',
+					)
+	);
+}
+
+/**
+ * Implements hook_menu().
+ */
+function tinypass_menu() {
+	$items = array();
+	$items['admin/config/tinypass'] = array(
+					'title' => 'TinyPass',
+					'description' => 'TinyPass Configuration',
+					'position' => 'left',
+					'weight' => -100,
+					'page callback' => 'system_admin_menu_block_page',
+					'access arguments' => array('administer site configuration'),
+					'file' => 'system.admin.inc',
+					'file path' => drupal_get_path('module', 'system'),
+	);
+
+	$items['admin/config/tinypass/settings'] = array(
+					'title' => 'TinyPass settings',
+					'description' => 'Setup your TinyPass settings',
+					'page callback' => 'drupal_get_form',
+					'page arguments' => array('tinypass_admin_settings'),
+					'access arguments' => array('administer tinypass'),
+					'weight' => 10,
+					'file' => 'tinypass.admin.settings.inc',
+	);
+
+
+	$items['admin/content/tinypass'] = array(
+					'title' => 'TinyPass',
+					'page callback' => 'tinypass_tag_list_page',
+					'access arguments' => array('administer tinypass'),
+					'type' => MENU_LOCAL_TASK | MENU_NORMAL_ITEM,
+					'file' => 'tinypass.tag.admin.inc',
+	);
+
+//	$items['admin/content/tinypass/enabled'] = array(
+//					'title' => 'TinyPass enabled content',
+//					'page callback' => 'tinypass_articles_page',
+//					'access arguments' => array('administer tinypass'),
+//    			'type' => MENU_DEFAULT_LOCAL_TASK,
+//					'file' => 'tinypass.tag.admin.inc',
+//	);
+
+	$items['admin/content/tinypass/tag_list'] = array(
+					'title' => 'Enabled tags/terms',
+					'page callback' => 'tinypass_tag_list_page',
+					'access arguments' => array('set tinypass on term'),
+					'type' => MENU_DEFAULT_LOCAL_TASK,
+					'weight' => 1,
+					'file' => 'tinypass.tag.admin.inc',
+	);
+
+	$items['admin/content/tinypass/settings'] = array(
+					'title' => 'Settings',
+					'access arguments' => array('set tinypass on term'),
+					'type' => MENU_LOCAL_TASK,
+					'page callback' => 'drupal_get_form',
+					'page arguments' => array('tinypass_admin_settings'),
+					'access arguments' => array('administer tinypass'),
+					'weight' => 10,
+					'file' => 'tinypass.admin.settings.inc',
+	);
+
+
+
+//	$items['admin/content/tinypass/tag_list/] = array(
+//				'title' => 'Add content',
+//				'page callback' => 'node_add_page',
+//				'access callback' => '_node_add_access',
+//				'file' => 'node.pages.inc',
+//);
+
+//The link for tags creation
+	$items['admin/content/tinypass/create_tag'] = array(
+					'title' => 'Configure a new tag/term',
+					'page callback' => 'tinypass_new_tag_page',
+					'access arguments' => array('set tinypass on term'),
+					'type' => MENU_LOCAL_TASK,
+					'weight' => 1,
+					'file' => 'tinypass.tag.admin.inc',
+	);
+
+//The link to edit tag. The placeholder % is an ID of the tag
+	$items['admin/content/tinypass/%/edit_tag'] = array(
+					'title' => 'Add/Edit TinyPass options for tags',
+					'page callback' => 'tinypass_edit_tag_page',
+					'page arguments' => array(3),
+					'access arguments' => array('set tinypass on term'),
+					'weight' => 1,
+					'file' => 'tinypass.tag.admin.inc',
+	);
+
+//The linkg to remove tag
+	$items['admin/content/tinypass/%/remove_tag'] = array(
+					'title' => 'Delete Tag',
+					'page callback' => 'tinypass_remove_tag_page',
+					'page arguments' => array(3),
+					'access arguments' => array('set tinypass on term'),
+					'weight' => 1,
+					'file' => 'tinypass.tag.admin.inc',
+	);
+
+	$items['admin/tinypass/taxonomy_autocomplete'] = array(
+					'title' => 'Autocomplete taxonomy',
+					'page callback' => 'tinypass_taxonomy_autocomplete',
+					'access arguments' => array('set tinypass on term'),
+					'type' => MENU_CALLBACK,
+					'file' => 'tinypass.tag.admin.inc',
+	);
+
+
+
+	return $items;
+}
+
+function tinypass_access($op, $node, $account) {
+	return TRUE;
+}
+
+function tinypass_node_load($nodes, $types) {
+
+	foreach ($nodes as $node) {
+
+		$node->tinypass = new stdClass();
+		$node->tinypass->node_enabled = FALSE;
+		$node->tinypass->tag_enabled = FALSE;
+
+		$result = db_query("SELECT m.nid, m.meta_id, m.enabled, m.data FROM {tinypass_node_meta} m WHERE m.nid = :nid ", array(":nid" => $node->nid))->fetchAssoc();
+
+		//node meta
+		if ($result) {
+			$result['data'] = unserialize($result['data']);
+			$node->tinypass->node_meta = $result;
+			$node->tinypass->node_enabled = $result['enabled'];
+		}
+
+		//check terms
+		$result = db_query("SELECT m.meta_id, m.tid, m.enabled, m.data
+								FROM {taxonomy_index} ti, {node} n, {tinypass_tag_meta} m
+								WHERE n.nid = ti.nid
+								AND ti.tid = m.tid AND n.nid = :nid ", array(":nid" => $node->nid));
+		if ($result && $result->rowCount() > 0) {
+			$result = $result->fetchAssoc();
+			$result['data'] = unserialize($result['data']);
+			$node->tinypass->tag_meta = $result;
+			$node->tinypass->tag_enabled = TRUE; //Set the flag that there is a tag related to re article
+		}
+
+	}
+
+}
+
+function tinypass_node_validate($node, $form, &$form_state) {
+	tinypass_node_save($node, $form, 'validate');
+}
+
+function tinypass_node_update($node) {
+	tinypass_node_save($node);
+}
+
+function tinypass_node_insert($node) {
+	tinypass_node_save($node);
+}
+
+function tinypass_node_save($node, $form = null, $op = '') {
+
+	$record = array();
+	$data = array();
+
+	$record['enabled'] = trim($node->tp_enable_for_node);
+	$enabled = $record['enabled'];
+
+
+	$data['resource_name'] = trim($node->tp_resource_name);
+	_tinypass_unset_if_empty($data, 'resource_name');
+
+	$pos = array();
+	$node2 = (array) $node;
+	$tp_error = FALSE;
+	$node2["tp_option_enabled0"] = "1";
+	for ($i = 0; $i < 3; $i++) {
+
+		$podata['en'] = (isset($node2["tp_option_enabled$i"])) ? $node2["tp_option_enabled$i"] : "0";
+		if ($podata['en'] == "1") {
+			$podata['p'] = $node2["tp_price$i"];
+
+			if ($podata['p'] == "") {
+				if ($enabled) {
+					$tp_error = TRUE;
+					form_set_error("tp_price$i", t('Price field is empty'));
+				}
+			}
+			if (!is_numeric($podata['p'])) {
+				if ($enabled) {
+					$tp_error = TRUE;
+					form_set_error("tp_price$i", t('Price \'' . $podata['p'] . '\' field should contain a numeric value'));
+				}
+			}
+
+			$podata['st'] = trim($node2["tp_start_time$i"]);
+			$podata['et'] = trim($node2["tp_end_time$i"]);
+
+			if ($podata['st'] != "" && $podata['et'] != "") {
+				if (strtotime($podata['et']) < strtotime($podata['st'])) {
+					if ($enabled) {
+						$tp_error = TRUE;
+						form_set_error("tp_start_time$i", t('Start date is less then end date'));
+					}
+				}
+			}
+
+			$podata['ap'] = $node2["tp_access_period$i"];
+
+			if (!is_numeric($podata['ap']) && $podata['ap'] != '') {
+				if ($enabled) {
+					$tp_error = TRUE;
+					form_set_error("tp_access_period$i", t('Access Period \'' . $podata['ap'] . '\' field is not a number'));
+				}
+			}
+
+			$podata['apt'] = $node2["tp_access_period_type$i"];
+			$podata['cpt'] = $node2["tp_caption$i"];
+
+			_tinypass_unset_if_empty($podata, 'cpt');
+			_tinypass_unset_if_empty($podata, 'st');
+			_tinypass_unset_if_empty($podata, 'et');
+
+			$pos[$i] = $podata;
+		}
+	}
+
+	$data['pos'] = $pos;
+
+	if ($op == 'validate' && $tp_error) {
+		return;
+	}
+
+	$record['data'] = serialize($data);
+	$record['nid'] = $node->nid;
+	$record['meta_id'] = $node->tp_meta_id;
+
+	$update = array();
+	if ($node->tp_meta_id != '') {
+		$update = 'meta_id';
+	}
+
+	drupal_write_record("tinypass_node_meta", $record, $update);
+
+
+}
+
+function tinypass_node_view($node, $view_mode, $lancode) {
+	global $user;
+
+	if ($view_mode == 'teaser')     //if it is a theaser there is no need to protect the resource
+		return;
+
+	include_once 'api/TinyPass.php';
+
+	//get the Tinypass configuration
+	$tinypass_enabled = variable_get('tinypass_enabled', "0");
+	if ($tinypass_enabled == "1")
+		if ($node->tinypass->node_enabled || $node->tinypass->tag_enabled ) {
+			if (variable_get('tinypass_env', 0) == 1) {
+				$env = 'https://api.tinypass.com';
+				$tinypass_aid = variable_get('tinypass_aid_prod', 'NOTSET');
+				$tinypass_secret_key = variable_get('tinypass_secret_key_prod', 'NOTSET');
+			}
+			else {
+				$env = 'http://sandbox.tinypass.com';
+				$tinypass_aid = variable_get('tinypass_aid_sand', 'NOTSET');
+				$tinypass_secret_key = variable_get('tinypass_secret_key_sand', 'NOTSET');
+			}
+
+			$tp = new TinyPass($env, $tinypass_aid, $tinypass_secret_key);
+
+			$primaryOffer = FALSE;
+			$secondaryOffer = NULL;
+			$pos = array();
+
+			//----------------------Tinypass on node -----------------------------//
+			if ($node->tinypass->node_enabled) {
+
+				$tp_options = new TinyPassOptions($node->tinypass->node_meta['data'], $node->tinypass->node_meta['enabled']);
+
+
+				$name = '';
+				if(isset($node->tinypass->node_meta['data']['resource_name']))
+					$name = $node->tinypass->node_meta['data']['resource_name'];
+
+				if($name == '')
+					$name = $node->title;
+
+				$tp_options->setResourceId("drupal_nid_" . $node->nid);
+				$tp_options->setResourceName($name);
+
+				$primaryOffer = _tinypass_create_offer($tp, $tp_options);
+
+			}
+
+			//----------------------Tinypass per section/tag-----------------------------//
+			if ($node->tinypass->tag_enabled) {
+
+				$tp_options = new TinyPassOptions($node->tinypass->tag_meta['data'], $node->tinypass->tag_meta['enabled']);
+
+				$tp_options->setResourceId("drupal_tid_" . $node->tinypass->tag_meta['tid']);
+
+				$secondaryOffer = _tinypass_create_offer($tp, $tp_options);
+
+			}
+
+			if ($primaryOffer == NULL) {
+				$primaryOffer = $secondaryOffer;
+				$secondaryOffer = NULL;
+			}
+
+			$primaryOfferTrialActive = FALSE;
+			$secondaryOfferTrialActive = FALSE;
+
+
+			if ($primaryOffer != NULL && $primaryOffer->isMetered()) {
+				$meter = $tp->getMeterDetails($primaryOffer);
+				if ($meter->isTrialPeriodActive()) {
+					$primaryOfferTrialActive = TRUE;
+				}
+			}
+
+			if ($secondaryOffer != NULL && $secondaryOffer->isMetered()) {
+				$meter = $tp->getMeterDetails($secondaryOffer);
+				if ($meter->isTrialPeriodActive()) {
+					$secondaryOfferTrialActive = TRUE;
+				}
+			}
+
+			//----------------------End Tinypass per section/tag--------------------------//
+			$granted = FALSE;
+			if ($tp->isAccessGranted($primaryOffer) || $primaryOfferTrialActive ) {
+				$granted = TRUE;
+			}
+
+			if ($secondaryOffer != NULL && $tp->isAccessGranted($secondaryOffer) || $secondaryOfferTrialActive) {
+				$granted = TRUE;
+			}
+
+			if (user_access('skip tinypass for node')) {
+				$granted = TRUE;
+			}
+
+			if ($granted) {
+
+
+				$node->content['body'][0]['#markup'] = $node->content['body'][0]['#markup'] . $tp->getWebRequest()->getRequestScript();
+
+			}
+			else {
+
+				$ticket = new TPTicket($primaryOffer);
+				if ($secondaryOffer)
+					$ticket->setSecondaryOffer($secondaryOffer);
+				$button = $ticket->createButton();
+
+				//create a WebRequest and add the Ticket to the Request
+				$tp->getWebRequest()->setCallback("tinypass_reloader");
+				$req = $tp->getWebRequest();
+				$req->addTicket($ticket);
+				$code = $req->getRequestScript();
+
+				drupal_add_css(drupal_get_path('module', 'tinypass') . '/tinypass.css');
+				drupal_add_js(drupal_get_path('module', 'tinypass') . '/tinypass_reload.js');
+
+				$access_message = variable_get('tinypass_access_message', 'Access Denied');
+				$button_html = $button;
+
+				if($node->content['body']['#items'][0]['safe_summary'] == '') {
+					$node->content['body'][0]['#markup'] = text_summary($node->content['body']['#items'][0]['safe_value']);
+				}
+				else {
+					$node->content['body'][0]['#markup'] = $node->content['body']['#items'][0]['safe_summary'];
+				}
+
+				$node->content['tinypass_code'] = array(
+								"#markup" => $code,
+								"#weight" => 700
+				);
+
+				$node->content['tinypass_denied_access'] = array(
+								"#markup" => theme('tinypass_denied_access', array('button_html' => $button_html, 'access_message' => $access_message)),
+								"#weight" => 0,
+				);
+
+			}
+		}
+
+
+
+}
+
+/**
+ * Implements hook_nodeapi().
+ */
+function tinypass_nodeapi(&$node, $op, $teaser = NULL, $page = NULL) {
+	global $user;
+
+	switch ($op) {
+		case 'view':
+
+			break;
+		case 'insert':
+		case 'update':
+		case 'validate':
+			break;
+		case 'delete':
+			db_query("DELETE from {tinypass_node_meta} where nid = %d ", $node->nid);
+			break;
+	}
+}
+
+/**
+ * Implements hook_form_alter().
+ *
+ */
+function tinypass_form_alter(&$form, $form_state) {
+	if (isset($form['type']) && isset($form['#node'])) {
+
+		$node = ($form['#node']);
+
+		drupal_add_js(drupal_get_path('module', 'tinypass') . '/tinypass.js');
+		drupal_add_css(drupal_get_path('module', 'tinypass') . '/tinypass.css');
+
+		if(!user_access('set tinypass on node'))
+			return;
+
+		if (!isset($node->tinypass->node_meta)) {
+			$node->tinypass = new stdClass();
+			$node->tinypass->node_enabled = FALSE;
+			$node->tinypass->node_meta = array();
+			$node->tinypass->node_meta['data'] = array();
+			$node->tinypass->node_meta['data']['resource_name'] = '';
+			$node->tinypass->node_meta['meta_id'] = '';
+			$node->tinypass->node_meta['data']['pos'] = array();
+		}
+
+		$resource_name = '';
+		if(isset($node->tinypass->node_meta['data']['resource_name']))
+			$resource_name = trim($node->tinypass->node_meta['data']['resource_name']);
+
+		$form['tinypass_settings'] = array(
+						'#type' => 'vertical_tabs',
+						'#weight' => 99,
+		);
+
+		$form['tinypass'] = array(
+						'#type' => 'fieldset',
+						'#title' => t('TinyPass options'),
+						'#collapsible' => TRUE,
+						'#collapsed' => TRUE,
+						'#attributes' => array('id' => 'tp-options'),
+						'#access' => user_access('administer content'),
+						'#theme' => 'tinypass_options_display',
+						'#group' => 'additional_settings',
+						'#weight' => 30,
+		);
+
+		$form['tinypass']['tp_enable_for_node'] = array(
+						'#type' => 'checkbox',
+						'#title' => t('Enable TinyPass for this ' . $node->type),
+						'#default_value' => isset($node->tinypass->node_enabled) ? $node->tinypass->node_enabled : '',
+						'#description' => t(''),
+						'#group' => 'additional_settings',
+						'#weight' => -1,
+		);
+
+		$form['tinypass']['tp_resource_name'] = array(
+						'#type' => 'textfield',
+						'#title' => t('Name'),
+						'#default_value' => $resource_name,
+						'#description' => t('User friendly name for display on TinyPass ticket. <b>Leave empty to use the ' . $node->type . ' title</b><br/>'),
+						'#maxlength' => 255,
+						'#size' => 60,
+						'#group' => 'additional_settings',
+						'#weight' => -1,
+		);
+
+		$form['tinypass']['tp_meta_id'] = array(
+						'#type' => 'hidden',
+						'#value' => @$form['#node']->tinypass->node_meta['meta_id'],
+		);
+
+
+		@$po_data = $node->tinypass->node_meta['data']['pos'];
+		for ($i = 0; $i < 3; $i++) {
+			$price = '';
+			$start_time = '';
+			$end_time = '';
+			$access_period = '';
+			$access_period_type = 'day';
+			$caption = '';
+
+
+			if (isset($po_data[$i])) {
+
+				$po = $po_data[$i];
+				if (isset($po['p'])) {
+					$price = $po['p'];
+				}
+
+				if (isset($po['st'])) {
+					$start_time = $po['st'];
+				}
+
+				if (isset($po['et'])) {
+					$end_time = $po['et'];
+				}
+
+				if (isset($po['ap'])) {
+					$access_period = $po['ap'];
+				}
+
+				if (isset($po['apt'])) {
+					$access_period_type = $po['apt'];
+				}
+
+				if (isset($po['cpt'])) {
+					$caption = $po['cpt'];
+				}
+
+			}
+
+			if ($i > 0) {
+				$form['tinypass']['tp_option_enabled' . $i] = array(
+								'#type' => 'hidden',
+								'#default_value' => $price != '' && $price > 0 ? TRUE : FALSE,
+								'#group' => 'additional_settings',
+				);
+			}
+
+
+			$form['tinypass']['tp_price' . $i] = array(
+							'#type' => 'textfield',
+							'#title' => t("Price"),
+							'#default_value' => $price,
+							'#maxlength' => 5,
+							'#size' => 5,
+							'#group' => 'additional_settings',
+			);
+
+			$form['tinypass']['tp_start_time' . $i] = array(
+							'#type' => 'date_popup',
+							'#title' => t("Price start datetime"),
+							'#date_timezone' => date_default_timezone(),
+							'#size' => 10,
+							'#default_value' => $start_time,
+							'#attributes' => array('class' => array('tinypass_datetime')),
+							'#group' => 'additional_settings',
+			);
+
+			$form['tinypass']['tp_end_time' . $i] = array(
+							'#type' => 'date_popup',
+							'#title' => t("Price end datetime"),
+							'#date_timezone' => date_default_timezone(),
+							'#default_value' => $end_time,
+							'#size' => 10,
+							'#attributes' => array('class' => array('tinypass_datetime')),
+							'#group' => 'additional_settings',
+			);
+
+
+			$form['tinypass']['tp_access_period' . $i] = array(
+							'#type' => 'textfield',
+							'#default_value' => $access_period,
+							'#maxlength' => 4,
+							'#size' => 4,
+							'#group' => 'additional_settings',
+			);
+
+			$form['tinypass']['tp_access_period_type' . $i] = array(
+							'#type' => 'select',
+							'#default_value' => $access_period_type,
+							'#options' => array('hour' => 'hour(s)', 'day' => 'day(s)',  'week' => 'week(s)', 'month' => 'month(s)'),
+							'#group' => 'additional_settings',
+			);
+
+
+			$form['tinypass']['tp_caption' . $i] = array(
+							'#type' => 'textfield',
+							'#title' => t("Custom Caption"),
+							'#default_value' => $caption,
+							'#maxlength' => 30,
+							'#size' => 30,
+							'#group' => 'additional_settings',
+			);
+
+		}
+	}
+
+}
+
+
+function tinypass_debug($object) {
+	echo "<pre>";
+	print_r($object);
+	echo "</pre>";
+}
+
+function _tinypass_extract_price_options($po_data) {
+	$pos = array();
+
+	for ($i = 0; $i < 3; $i++) {
+		if (isset($po_data['po' . $i])) {
+			$config = $po_data['po' . $i];
+
+			if ($config['p'] == '' || $config['p'] == 0)
+				break;
+
+			$startTime = NULL;
+			if ($config['st'] != '' || $config['st'] != 0)
+				$startTime = strtotime($config['st']);
+
+			$endTime = NULL;
+			if ($config['et'] != '' || $config['et'] != 0)
+				$endTime = strtotime($config['et']);
+
+			if ($config['ap'] == "" || $config['ap'] == "0")
+				$p = "";
+			else
+				$p = $config['ap'] . " " . $config['apt'];
+
+			$po = new TPPriceOption($config['p'], $p, $startTime, $endTime);
+
+			if ($config['cpt'] != '')
+				$po->setCaption($config['cpt']);
+
+			$pos[] = $po;
+		}
+	}
+
+	return $pos;
+
+}
+
+/**
+ * Implements hook_help().
+ */
+/**
+ function tinypass_help($path, $arg) {
+ switch ($path) {
+ case 'admin/help#tinypass':
+ $output = t('<p>Provides a mechanism for modules to automatically generate aliases for the content they manage.</p>
+ <h2>Settings</h2>
+ return $output;
+ }
+ }
+ */
+
+function _tinypass_create_offer($tp, TinyPassOptions $options) {
+	if ($options == NULL)
+		return NULL;
+	$resource = new TPResource($options->getResourceId(), $options->getResourceName());
+
+
+	$pos = array();
+
+	if ($options->isEnabled()) {
+		for ($i = 0; $i < $options->getNumPrices(); $i++) {
+
+			$po = new TPPriceOption($options->getPrice($i));
+
+			if ($options->getAccess($i) != '')
+				$po->setAccessPeriod($options->getAccess($i));
+
+			if ($options->getCaption($i) != '')
+				$po->setCaption($options->getCaption($i));
+
+			if ($options->getStartDateSec($i) != '')
+				$po->setStartDateInSecs(strtotime($options->getStartDateSec($i)) - (variable_get('date_default_timezone', 0)));
+
+			if ($options->getEndDateSec($i) != '')
+				$po->setEndDateInSecs(strtotime($options->getEndDateSec($i)) - (variable_get('date_default_timezone', 0)));
+
+			$pos[] = $po;
+
+		}
+	}
+
+	$offer = new TPOffer($resource, $pos);
+
+	if ($options->isTimeMetered() ) {
+
+		$offer->addPolicy(TPMeteredPolicy::createReminderByPeriod($options->getTrialPeriod(), $options->getLockoutPeriod()));
+
+	}
+	elseif ($options->isCountMetered() ) {
+
+		$offer->addPolicy(TPMeteredPolicy::createReminderByAccessCount($options->getMaxAccessAttempts(), $options->getLockoutPeriod()));
+
+	}
+
+	return $offer;
+
+}
+
+class TinyPassOptions {
+
+	public function  __construct($data, $enabled = FALSE) {
+
+		$this->data = $data;
+
+		$this->data['en'] = $enabled;
+
+		if ($this->_isset('resource_name'))
+			$this->resource_name = $data['resource_name'];
+
+		if ($this->_isset('resource_id'))
+			$this->resource_id = $data['resource_id'];
+
+		$this->num_prices = count($data['pos']);
+
+	}
+
+	public function isEnabled() {
+		return $this->_isset('en');
+	}
+
+	private function _isset($field) {
+		return isset($this->data[$field]) && ($this->data[$field] || $this->data[$field] == 'on');
+	}
+
+	public function getResourceName() {
+		return $this->resource_name;
+	}
+
+	public function setResourceName($s) {
+		$this->resource_name = $s;
+	}
+
+	public function getResourceId() {
+		return $this->resource_id;
+	}
+
+	public function setResourceId($s) {
+		$this->resource_id = $s;
+	}
+
+	public function getNumPrices() {
+		return $this->num_prices;
+	}
+
+	private function getPOValue($index, $field, $defaultValue) {
+		if (isset($this->data['pos'])) {
+			if (isset($this->data['pos'][$index])) {
+				if (isset($this->data['pos'][$index][$field])) {
+					return $this->data['pos'][$index][$field];
+				}
+			}
+		}
+		return $defaultValue;
+	}
+
+	public function getPrice($i) {
+		return $this->getPOValue($i, "p", '');
+	}
+
+	public function getAccess($i) {
+		$ap = $this->getPOValue($i, "ap", '');
+		$apt = $this->getPOValue($i, "apt", '');
+
+		if ($ap == '' ||  $apt == '')
+			return '';
+
+		return $ap . " " . $apt;
+	}
+
+	public function getCaption($i) {
+		return $this->getPOValue($i, "cpt", '');
+	}
+
+	public function getStartDateSec($i) {
+		return $this->getPOValue($i, "st", '');
+	}
+
+	public function getEndDateSec($i) {
+		return $this->getPOValue($i, "et", '');
+	}
+
+	public function isMetered() {
+		if ($this->_isset('metered')) {
+			return in_array($this->data['metered'], array('count', 'time'));
+		}
+		return FALSE;
+	}
+
+	public function isTimeMetered() {
+		return $this->isMetered() && $this->data['metered'] == 'time';
+	}
+
+	public function isCountMetered() {
+		return $this->isMetered() && $this->data['metered'] == 'count';
+	}
+
+
+	public function getLockoutPeriod() {
+		return $this->data["m_lp"] . " " . $this->data["m_lp_type"];
+	}
+
+	public function getMaxAccessAttempts() {
+		return $this->data["m_maa"];
+	}
+
+	public function getTrialPeriod() {
+		return $this->data["m_tp"] . " " . $this->data['m_tp_type'];
+	}
+
+
+}
+
+function _tinypass_unset_if_empty(&$arr, $field) {
+	if (isset($arr[$field])) {
+		if ($arr[$field] == '')
+			unset($arr[$field]);
+	}
+}
+
+
+function tinypass_options_overview(TinyPassOptions $options) {
+
+	if($options == null || $options == "")
+		return "";
+
+	$output = "";
+
+
+	$resource_name = htmlspecialchars(stripslashes($options->getResourceName()));
+
+	if($resource_name == '')
+		$resource_name = t('Default to post title');
+
+	$output .= "<div><strong>Name:</strong>&nbsp;" . $resource_name . "</div>";
+
+
+	$line = "<br>";
+	for($i = 0; $i < $options->getNumPrices(); $i++) {
+
+		$price = $options->getPrice($i);
+		$accessPeriod = $options->getAccess($i);
+		$caption =  $options->getCaption($i);
+		$startTime = $options->getStartDateSec($i);
+		$endTime =  $options->getEndDateSec($i);
+
+		if($accessPeriod == '') {
+			$line .= "<div><strong>" . t('Price:') . "</strong>&nbsp; $price " . t("for unlimited access") . "</div>";
+		}else {
+			$line .= "<div><strong>" . t('Price:') . "</strong>&nbsp; $price for $accessPeriod </div>";
+		}
+
+		if($caption != '') {
+			$line .= "<div><strong>" . t('Caption:') . "</strong>&nbsp; '". htmlspecialchars(stripslashes($caption)) . "'</div>";
+		}
+
+		if($startTime != '' && $endTime != '')
+			$line .= " <strong>Valid from: </strong><span>$startTime to </span><span>$endTime</span>";
+		else if($startTime != '')
+			$line .= " <strong>" . t("Valid from: ") . "</strong>" . $startTime;
+		else if($endTime != '')
+			$line .= " <strong>" . t("Ending on: ") . "</strong>" . $endTime;
+
+		$line .= "";
+
+	}
+
+
+	$en= t('Disabled');
+	$cond = '';
+	if($options->isTimeMetered()) {
+		$en= t('Time Based');
+		$cond = t("@trial_period trial - @lockout_period lockout",
+						array('@trial_period' => $options->getTrialPeriod(), '@lockout_period' => $options->getLockoutPeriod()));
+	}else if($options->isCountMetered()) {
+		$en= t('View Based');
+		$cond = t("@maa views -  @lockout_period lockout",
+						array('@maa' => $options->getMaxAccessAttempts(), '@lockout_period' => $options->getLockoutPeriod()));
+	}
+
+	$line .= "<br/><div><strong>". t("Metered:") . "</strong>&nbsp;$en</div>";
+	$line .= "$cond";
+
+	$output .= $line;
+
+	return $output;
+
+}

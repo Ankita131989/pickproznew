@@ -1,0 +1,114 @@
+<?php
+/**
+ * @file
+ * Install hooks for TinyPass module
+ */
+/**
+ * Tinypass
+ * ------------------------------------------------------------------------
+ * @author    TinyPass, Inc
+ * @copyright Copyright (C) 2011 tinypass.com. All Rights Reserved.
+ * @license - http://www.gnu.org/licenses/lgpl-3.0.html GNU/LGPL
+ * Websites: http://tinypass.com
+ * Technical Support: http://developer.tinypass.com
+ */
+
+/**
+ * Implementation of hook_install().
+ */
+function tinypass_install() {
+  variable_set('tinypass_enabled', '1');
+  variable_set('tinypass_aid_sand', 'W7JZEZFu2h');
+  variable_set('tinypass_secret_key_sand', 'jeZC9ykDfvW6rXR8ZuO3EOkg9HaKFr90ERgEb3RW');
+  variable_set('tinypass_aid_prod', 'AIDAIDAID0');
+  variable_set('tinypass_secret_key_prod', 'Retreive from http://www.tinypass.com');
+  variable_set('tinypass_env', 0);
+  variable_set('tinypass_access_message', t("To continue, please purchase using TinyPass"));
+
+//  drupal_install_schema('tinypass');
+  cache_clear_all();
+}
+
+function tinypass_schema() {
+  $schema['tinypass_node_meta'] = array(
+          'description' => 'Contains resource and price information',
+          'fields' => array(
+                  'meta_id' => array(
+                          'description' => 'The primary identifier for a node.',
+                          'type' => 'serial',
+                          'unsigned' => TRUE,
+                          'not null' => TRUE),
+                  'nid' => array(
+                          'description' => 'The primary identifier for a node.',
+                          'type' => 'int',
+                          'unsigned' => TRUE,
+                          'not null' => TRUE),
+
+                  'enabled' => array(
+                          'description' => 'Enabled for Node',
+                          'type' => 'int',
+                          'size' => 'tiny',
+                          'default' => 0,
+                          'not null' => TRUE
+                  ),
+                  'data' => array(
+                          'description' => 'Resource Data',
+                          'type' => 'text',
+                          'size' => 'big',
+                          'not null' => TRUE
+                  ),
+          ),
+          'indexes' => array(
+                  'nid' => array('nid')
+          ),
+          'primary key' => array('meta_id'),
+  );
+
+  $schema['tinypass_tag_meta'] = array(
+          'description' => 'Contains resource and price information for Drupal Tags/taxonomy',
+          'fields' => array(
+                  'meta_id' => array(
+                          'description' => 'The primary identifier for a node.',
+                          'type' => 'serial',
+                          'unsigned' => TRUE,
+                          'not null' => TRUE),
+                  'tid' => array(
+                          'description' => 'The primary identifier for a term',
+                          'type' => 'int',
+                          'unsigned' => TRUE,
+                          'not null' => TRUE),
+
+                  'enabled' => array(
+                          'description' => 'Enabled Tag',
+                          'type' => 'int',
+                          'size' => 'tiny',
+                          'default' => 0,
+                          'not null' => TRUE
+                  ),
+                  'data' => array(
+                          'description' => 'Resource Data',
+                          'type' => 'text',
+                          'size' => 'big',
+                          'not null' => TRUE
+                  ),
+          ),
+          'indexes' => array(
+                  'tid' => array('tid')
+          ),
+          'primary key' => array('meta_id'),
+  );
+
+  return $schema;
+
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function tinypass_uninstall() {
+// Delete all the pathauto variables and then clear the variable cache
+  db_query("DELETE FROM {variable} WHERE name LIKE 'tinypass_%'");
+  drupal_uninstall_schema('tinypass');
+  cache_clear_all('variables', 'cache');
+}
+

@@ -1,0 +1,161 @@
+<?php
+error_reporting(-1);
+function flag_auto_theme(){
+    return array(
+        'node_pick'=> array(
+            'template'=>'node--pick.tpl.php',            
+        )
+    );
+}
+
+function flag_auto_menucallback(){
+    return theme('node_pick');
+}
+
+
+function flag_auto_compare_team_result($match_id,$content_id,$bet_winner_name) {
+        
+        $bet_winner_name_origi = trim($bet_winner_name);
+        //get match_id(for content) and sport_line_result id for table
+        $statement = db_query ("SELECT `bundle`,`entity_id` FROM `field_revision_field_match_id` WHERE `field_match_id_value` = '$match_id' AND bundle ='sport_line_result'");
+        $row_count = $statement->rowCount();
+        if ($row_count != 0)
+        {
+                foreach ( $statement as $get_match_entity_id) {
+                
+                        //get id for sport_line_result content type for releated -- match id 
+                        $match_enet_id = $get_match_entity_id ->entity_id;
+                        $home_team_arr = get_home_team_result ($match_enet_id);
+                        $away_team_arr = get_away_team_result ($match_enet_id);
+                        
+                        //print_r($away_team_arr);
+                        //print_r($home_team_arr);
+                        $final_result ='';
+                        if ($home_team_arr[1] > $away_team_arr[1])
+                        {
+                                $final_result = $home_team_arr[0];               
+                        } 
+                        else 
+                        {
+                                 $final_result = $away_team_arr[0];    
+                        }
+                        
+                        $final_result_name = trim($final_result);
+                       
+                        
+                        if ($bet_winner_name_origi == $final_result_name) 
+                        {
+                                echo $bet_winner_name_origi.'&nbsp; Winner';
+                                unmark_good_pick($content_id);
+                                echo "<section>". flag_create_link('good_pick', $content_id) . "</section>";
+                                echo "<section> Winner is &nbsp; $final_result_name.</section>";
+                        }
+                        else 
+                        {
+                                mark_good_pick($content_id);
+                                echo "<section>". flag_create_link('good_pick', $content_id) . "</section>";
+                                echo "<Section>Winner is &nbsp; $final_result_name.</section>";
+                        }
+                        
+                        
+                } // end foreach loop
+        } else {
+            echo "<section> Keep in Touch with us result will be coming soon </section>";    
+        }
+} // end function 
+
+function get_home_team_result ($id) {
+
+        $statement = db_query ("SELECT h_team.field_home_team_value,h_score.field_home_score_value FROM `field_data_field_home_team` as h_team join field_data_field_home_score as h_score  where h_team.entity_id = '$id' AND h_score.entity_id = '$id'");
+        $home_team_arr = array();
+        
+        foreach ( $statement as $ht_result )
+        {
+                $home_team_name         = $ht_result-> field_home_team_value;
+                $home_team_score        = $ht_result-> field_home_score_value;
+                array_push($home_team_arr,$home_team_name);
+                array_push($home_team_arr,$home_team_score);
+        }//end foreach loop
+        return $home_team_arr;
+
+}//end function get_home_team 
+
+function get_away_team_result ($away_id) {
+
+        $statement = db_query("SELECT away_team.field_away_team_value,away_score.field_away_score_value FROM `field_data_field_away_team` as away_team join field_data_field_away_score  as away_score where away_team.entity_id ='$away_id' AND away_score.entity_id ='$away_id'");
+        
+        $away_team_arr = array();
+        foreach ( $statement as $away_result ) {
+               $away_team_name          = $away_result -> field_away_team_value;
+               $away_team_score         = $away_result -> field_away_score_value;
+               
+                array_push($away_team_arr,$away_team_name);
+                array_push($away_team_arr,$away_team_score);
+        }//end foreach loop
+        return $away_team_arr;
+} // end function for get_away_team_result
+
+function mark_good_pick($content_id_pick) {
+
+        $statement = db_query("SELECT *  FROM `flag_counts` where content_id = '$content_id_pick'");
+        if ($statement !='')
+        {
+              
+               $num_deleted = db_delete('flag_counts')
+                        ->condition('content_id',$content_id_pick)
+                        ->execute();
+                 
+                $num_deleted = db_delete('flag_content')
+                        ->condition('content_id',$content_id_pick)
+                        ->execute();
+        }
+
+}//end function of mark_good_pick 
+
+function unmark_good_pick($content_id_pick) {
+
+$lasted_timestamp = mktime(date("H"), date("i"), date("s"), date("m"), date("d"), date("Y"));
+
+        $statement = db_query("SELECT *  FROM `flag_counts` where content_id = '$content_id_pick'");
+        
+        if ($statement =='')
+        {
+              $nid = db_insert('flag_counts')
+                        ->fields(array(
+                                'fid'           => 2,
+                                'content_type'  => 'node',
+                                'content_id'    => $content_id_pick,
+                                'count'         => 1,
+                                'last_updated'  => $lasted_timestamp,
+                        ))
+                        ->execute();
+                        
+              $nid1 = db_insert('flag_content')
+                        ->fields(array(
+                                'fid'           => 2,
+                                'content_type'  => 'node',
+                                'content_id'    => $content_id_pick,
+                                'uid'           => 1,
+                                'sid'           => 0,
+                                'timestamp'     => $lasted_timestamp,
+                        ))
+                        ->execute();
+        } else {
+             $fl_count =  db_update('flag_counts')
+                        ->fields(array(
+                                'last_updated'  => $lasted_timestamp
+                        ))
+                        ->condition('content_id', $content_id_pick)
+                        ->execute();
+                        
+            $fl_count1 =  db_update('flag_content')
+                ->fields(array(
+                        'timestamp'           => $lasted_timestamp
+                ))
+                ->condition('content_id',$content_id_pick)
+                ->execute();
+
+        }
+
+}// end function of unmark_good_pick
+

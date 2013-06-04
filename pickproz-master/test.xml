@@ -1,0 +1,2877 @@
+<competition id="15" name="NFL 2012/13" sport="American Football" country="USA" league="NFL">
+<matches><match id="2610697"><hometeam>Green Bay</hometeam><awayteam>Chicago</awayteam><timeplayed>2012-09-14 00:20:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.38</ho><xo></xo><ao>3.33</ao></bm>
+
+<bm id="95"><ho>1.37</ho><xo></xo><ao>3.30</ao></bm>
+
+<bm id="54"><ho>1.37</ho><xo></xo><ao>3.20</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610699"><hometeam>Carolina</hometeam><awayteam>New Orleans</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>2.23</ho><xo></xo><ao>1.74</ao></bm>
+
+<bm id="95"><ho>2.23</ho><xo></xo><ao>1.70</ao></bm>
+
+<bm id="54"><ho>2.25</ho><xo></xo><ao>1.68</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610698"><hometeam>New York Giants</hometeam><awayteam>Tampa Bay</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.26</ho><xo></xo><ao>4.30</ao></bm>
+
+<bm id="95"><ho>1.26</ho><xo></xo><ao>4.20</ao></bm>
+
+<bm id="54"><ho>1.25</ho><xo></xo><ao>4.10</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610701"><hometeam>Indianapolis</hometeam><awayteam>Minnesota</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>2.08</ho><xo></xo><ao>1.84</ao></bm>
+
+<bm id="54"><ho>2.05</ho><xo></xo><ao>1.80</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610705"><hometeam>Jacksonville</hometeam><awayteam>Houston</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>4.01</ho><xo></xo><ao>1.29</ao></bm>
+
+<bm id="95"><ho>3.90</ho><xo></xo><ao>1.29</ao></bm>
+
+<bm id="54"><ho>4.00</ho><xo></xo><ao>1.26</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610700"><hometeam>New England</hometeam><awayteam>Arizona</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.13</ho><xo></xo><ao>7.04</ao></bm>
+
+<bm id="95"><ho>1.11</ho><xo></xo><ao>7.00</ao></bm>
+
+<bm id="54"><ho>1.12</ho><xo></xo><ao>6.50</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610704"><hometeam>Cincinnati</hometeam><awayteam>Cleveland</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.32</ho><xo></xo><ao>3.73</ao></bm>
+
+<bm id="95"><ho>1.31</ho><xo></xo><ao>3.60</ao></bm>
+
+<bm id="54"><ho>1.32</ho><xo></xo><ao>3.50</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610703"><hometeam>Buffalo</hometeam><awayteam>Kansas City</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.59</ho><xo></xo><ao>2.53</ao></bm>
+
+<bm id="95"><ho>1.57</ho><xo></xo><ao>2.55</ao></bm>
+
+<bm id="54"><ho>1.58</ho><xo></xo><ao>2.50</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610710"><hometeam>Miami</hometeam><awayteam>Oakland</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>2.26</ho><xo></xo><ao>1.72</ao></bm>
+
+<bm id="95"><ho>2.25</ho><xo></xo><ao>1.69</ao></bm>
+
+<bm id="54"><ho>2.25</ho><xo></xo><ao>1.68</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610702"><hometeam>Philadelphia</hometeam><awayteam>Baltimore</awayteam><timeplayed>2012-09-16 17:00:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.74</ho><xo></xo><ao>2.22</ao></bm>
+
+<bm id="95"><ho>1.73</ho><xo></xo><ao>2.17</ao></bm>
+
+<bm id="54"><ho>1.74</ho><xo></xo><ao>2.15</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610707"><hometeam>St Louis</hometeam><awayteam>Washington</awayteam><timeplayed>2012-09-16 20:05:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>2.41</ho><xo></xo><ao>1.64</ao></bm>
+
+<bm id="95"><ho>2.40</ho><xo></xo><ao>1.63</ao></bm>
+
+<bm id="54"><ho>2.40</ho><xo></xo><ao>1.62</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610706"><hometeam>Seattle</hometeam><awayteam>Dallas</awayteam><timeplayed>2012-09-16 20:05:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>2.53</ho><xo></xo><ao>1.59</ao></bm>
+
+<bm id="95"><ho>2.55</ho><xo></xo><ao>1.57</ao></bm>
+
+<bm id="54"><ho>2.55</ho><xo></xo><ao>1.57</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610709"><hometeam>San Diego</hometeam><awayteam>Tennessee</awayteam><timeplayed>2012-09-16 20:25:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.38</ho><xo></xo><ao>3.33</ao></bm>
+
+<bm id="95"><ho>1.37</ho><xo></xo><ao>3.30</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610708"><hometeam>Pittsburgh</hometeam><awayteam>New York Jets</awayteam><timeplayed>2012-09-16 20:25:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.39</ho><xo></xo><ao>3.28</ao></bm>
+
+<bm id="95"><ho>1.38</ho><xo></xo><ao>3.25</ao></bm>
+
+<bm id="54"><ho>1.38</ho><xo></xo><ao>3.15</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610711"><hometeam>San Francisco</hometeam><awayteam>Detroit</awayteam><timeplayed>2012-09-17 00:25:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.33</ho><xo></xo><ao>3.69</ao></bm>
+
+<bm id="95"><ho>1.32</ho><xo></xo><ao>3.55</ao></bm>
+
+<bm id="54"><ho>1.32</ho><xo></xo><ao>3.45</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2610712"><hometeam>Atlanta</hometeam><awayteam>Denver</awayteam><timeplayed>2012-09-18 00:35:00.0</timeplayed><division>Week 2</division>
+
+<odds mid="0">
+<bm id="53"><ho>1.61</ho><xo></xo><ao>2.47</ao></bm>
+
+<bm id="95"><ho>1.61</ho><xo></xo><ao>2.45</ao></bm>
+
+<bm id="54"><ho>1.60</ho><xo></xo><ao>2.45</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+</matches>
+
+
+</competition>
+
+<competition id="48" name="NCAAF College Football 2012/13" sport="American Football" country="USA" league="College Football">
+<matches><match id="2667204"><hometeam>Rutgers</hometeam><awayteam>South Florida</awayteam><timeplayed>2012-09-14 00:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="53"><ho>3.64</ho><xo></xo><ao>1.33</ao></bm>
+
+<bm id="95"><ho>3.50</ho><xo></xo><ao>1.33</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667205"><hometeam>Washington State</hometeam><awayteam>UNLV</awayteam><timeplayed>2012-09-15 02:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="53"><ho>1.26</ho><xo></xo><ao>4.38</ao></bm>
+
+<bm id="95"><ho>1.24</ho><xo></xo><ao>4.40</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667209"><hometeam>Arkansas State</hometeam><awayteam>Nebraska</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>15.00</ho><xo></xo><ao>1.04</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667210"><hometeam>California</hometeam><awayteam>Ohio State</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>7.25</ho><xo></xo><ao>1.11</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667211"><hometeam>Louisiana-Lafayette</hometeam><awayteam>Oklahoma State</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>13.50</ho><xo></xo><ao>1.05</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667208"><hometeam>Virginia Tech</hometeam><awayteam>Pittsburgh</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.28</ho><xo></xo><ao>4.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667212"><hometeam>Texas Christian</hometeam><awayteam>Kansas</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.07</ho><xo></xo><ao>10.50</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667213"><hometeam>Louisiana-Monroe</hometeam><awayteam>Auburn</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>7.00</ho><xo></xo><ao>1.11</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667215"><hometeam>Northern Illinois</hometeam><awayteam>Army</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.67</ho><xo></xo><ao>2.30</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667214"><hometeam>Western Michigan</hometeam><awayteam>Minnesota</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>2.20</ho><xo></xo><ao>1.71</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667218"><hometeam>Eastern Michigan</hometeam><awayteam>Purdue</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>14.75</ho><xo></xo><ao>1.04</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667207"><hometeam>Wake Forest</hometeam><awayteam>Florida State</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>29.75</ho><xo></xo><ao>1.02</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667219"><hometeam>Connecticut</hometeam><awayteam>Maryland</awayteam><timeplayed>2012-09-15 17:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.69</ho><xo></xo><ao>2.25</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667226"><hometeam>Virginia</hometeam><awayteam>Georgia Tech</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>4.15</ho><xo></xo><ao>1.26</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667228"><hometeam>Navy</hometeam><awayteam>Penn State</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="53"><ho>2.88</ho><xo></xo><ao>1.48</ao></bm>
+
+<bm id="95"><ho>2.80</ho><xo></xo><ao>1.45</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667227"><hometeam>Boston College</hometeam><awayteam>Northwestern</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>2.45</ho><xo></xo><ao>1.61</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667232"><hometeam>East Carolina</hometeam><awayteam>Southern Miss</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>3.50</ho><xo></xo><ao>1.33</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667231"><hometeam>Texas A&amp;M</hometeam><awayteam>Southern Methodist</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.20</ho><xo></xo><ao>5.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667225"><hometeam>North Carolina</hometeam><awayteam>Louisville</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>2.45</ho><xo></xo><ao>1.61</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667224"><hometeam>Massachusetts</hometeam><awayteam>Michigan</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>651.00</ho><xo></xo><ao>1.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667223"><hometeam>Alabama</hometeam><awayteam>Arkansas</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.07</ho><xo></xo><ao>10.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2670955"><hometeam>Miami Ohio</hometeam><awayteam>Boise State</awayteam><timeplayed>2012-09-15 21:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>11.00</ho><xo></xo><ao>1.07</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667236"><hometeam>Florida International</hometeam><awayteam>UCF</awayteam><timeplayed>2012-09-15 21:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>7.25</ho><xo></xo><ao>1.11</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667239"><hometeam>South Alabama</hometeam><awayteam>North Carolina State</awayteam><timeplayed>2012-09-15 23:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>61.00</ho><xo></xo><ao>1.01</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667238"><hometeam>Florida</hometeam><awayteam>Tennessee</awayteam><timeplayed>2012-09-15 23:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>2.30</ho><xo></xo><ao>1.67</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667242"><hometeam>Ohio</hometeam><awayteam>Marshall</awayteam><timeplayed>2012-09-15 23:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.38</ho><xo></xo><ao>3.20</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667243"><hometeam>UAB</hometeam><awayteam>South Carolina</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>76.00</ho><xo></xo><ao>1.01</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667251"><hometeam>Rice</hometeam><awayteam>Louisiana Tech</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>10.00</ho><xo></xo><ao>1.07</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667249"><hometeam>Middle Tennessee</hometeam><awayteam>Memphis</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.65</ho><xo></xo><ao>2.35</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667246"><hometeam>Arizona State</hometeam><awayteam>Missouri</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>3.20</ho><xo></xo><ao>1.38</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667245"><hometeam>Western Kentucky</hometeam><awayteam>Kentucky</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>3.60</ho><xo></xo><ao>1.31</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667244"><hometeam>North Texas</hometeam><awayteam>Kansas State</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>33.50</ho><xo></xo><ao>1.01</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667254"><hometeam>Mississippi State</hometeam><awayteam>Troy State</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.11</ho><xo></xo><ao>7.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667252"><hometeam>New Mexico</hometeam><awayteam>Texas Tech</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>76.00</ho><xo></xo><ao>1.01</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667253"><hometeam>Bowling Green</hometeam><awayteam>Toledo</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>2.45</ho><xo></xo><ao>1.61</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667256"><hometeam>Southern California</hometeam><awayteam>Stanford</awayteam><timeplayed>2012-09-16 00:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.36</ho><xo></xo><ao>3.40</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667257"><hometeam>Florida Atlantic</hometeam><awayteam>Georgia</awayteam><timeplayed>2012-09-16 00:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>401.00</ho><xo></xo><ao>1.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667260"><hometeam>Notre Dame</hometeam><awayteam>Michigan State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>3.00</ho><xo></xo><ao>1.42</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667259"><hometeam>Utah State</hometeam><awayteam>Wisconsin</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>5.25</ho><xo></xo><ao>1.18</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667262"><hometeam>Colorado State</hometeam><awayteam>San Jose State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>4.30</ho><xo></xo><ao>1.24</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667266"><hometeam>New Mexico State</hometeam><awayteam>Texas-El Paso</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>4.50</ho><xo></xo><ao>1.23</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667258"><hometeam>Idaho</hometeam><awayteam>Louisiana State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>351.00</ho><xo></xo><ao>1.00</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667265"><hometeam>Colorado</hometeam><awayteam>Fresno State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>5.40</ho><xo></xo><ao>1.17</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667264"><hometeam>Ball State</hometeam><awayteam>Indiana</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>2.20</ho><xo></xo><ao>1.71</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667267"><hometeam>Texas</hometeam><awayteam>Mississippi</awayteam><timeplayed>2012-09-16 02:15:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.26</ho><xo></xo><ao>4.15</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667268"><hometeam>Brigham Young</hometeam><awayteam>Utah</awayteam><timeplayed>2012-09-16 03:00:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>1.54</ho><xo></xo><ao>2.60</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+<match id="2667270"><hometeam>Houston</hometeam><awayteam>UCLA</awayteam><timeplayed>2012-09-16 03:30:00.0</timeplayed>
+
+<odds mid="0">
+<bm id="95"><ho>7.00</ho><xo></xo><ao>1.11</ao></bm>
+
+
+</odds>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</match>
+
+</matches>
+<matchresults><match id="2667204"><hometeam>Rutgers</hometeam><awayteam>South Florida</awayteam><timeplayed>2012-09-14 00:30:00.0</timeplayed>
+<score>
+<home>23</home>
+<away>13</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667206"><hometeam>Sam Houston State</hometeam><awayteam>Baylor</awayteam><timeplayed>2012-09-15 00:30:00.0</timeplayed>
+<score>
+<home>23</home>
+<away>48</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667205"><hometeam>Washington State</hometeam><awayteam>UNLV</awayteam><timeplayed>2012-09-15 02:00:00.0</timeplayed>
+<score>
+<home>35</home>
+<away>27</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667207"><hometeam>Wake Forest</hometeam><awayteam>Florida State</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>0</home>
+<away>52</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667208"><hometeam>Virginia Tech</hometeam><awayteam>Pittsburgh</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>17</home>
+<away>35</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667209"><hometeam>Arkansas State</hometeam><awayteam>Nebraska</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>13</home>
+<away>42</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667210"><hometeam>California</hometeam><awayteam>Ohio State</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>28</home>
+<away>35</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667211"><hometeam>Louisiana-Lafayette</hometeam><awayteam>Oklahoma State</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>24</home>
+<away>65</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667212"><hometeam>Texas Christian</hometeam><awayteam>Kansas</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>6</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667213"><hometeam>Louisiana-Monroe</hometeam><awayteam>Auburn</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>28</home>
+<away>31</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667214"><hometeam>Western Michigan</hometeam><awayteam>Minnesota</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>23</home>
+<away>28</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667215"><hometeam>Northern Illinois</hometeam><awayteam>Army</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>41</home>
+<away>40</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667216"><hometeam>Charleston Southern</hometeam><awayteam>Illinois</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>0</home>
+<away>44</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667217"><hometeam>Bethune-Cookman</hometeam><awayteam>Miami Florida</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>10</home>
+<away>38</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667218"><hometeam>Eastern Michigan</hometeam><awayteam>Purdue</awayteam><timeplayed>2012-09-15 17:00:00.0</timeplayed>
+<score>
+<home>16</home>
+<away>54</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667219"><hometeam>Connecticut</hometeam><awayteam>Maryland</awayteam><timeplayed>2012-09-15 17:30:00.0</timeplayed>
+<score>
+<home>24</home>
+<away>21</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667220"><hometeam>Presbyterian</hometeam><awayteam>Vanderbilt</awayteam><timeplayed>2012-09-15 17:30:00.0</timeplayed>
+<score>
+<home>0</home>
+<away>58</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667221"><hometeam>Tennessee Tech</hometeam><awayteam>Oregon</awayteam><timeplayed>2012-09-15 20:00:00.0</timeplayed>
+<score>
+<home>14</home>
+<away>63</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667222"><hometeam>Furman</hometeam><awayteam>Clemson</awayteam><timeplayed>2012-09-15 20:00:00.0</timeplayed>
+<score>
+<home>7</home>
+<away>41</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667224"><hometeam>Massachusetts</hometeam><awayteam>Michigan</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>13</home>
+<away>63</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667225"><hometeam>North Carolina</hometeam><awayteam>Louisville</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>34</home>
+<away>39</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667226"><hometeam>Virginia</hometeam><awayteam>Georgia Tech</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>56</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667227"><hometeam>Boston College</hometeam><awayteam>Northwestern</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>13</home>
+<away>22</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667228"><hometeam>Navy</hometeam><awayteam>Penn State</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>7</home>
+<away>34</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667229"><hometeam>Morgan State</hometeam><awayteam>Akron</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>6</home>
+<away>66</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667230"><hometeam>Northern Iowa</hometeam><awayteam>Iowa</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>16</home>
+<away>27</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667231"><hometeam>Texas A&amp;M</hometeam><awayteam>Southern Methodist</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>48</home>
+<away>3</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667232"><hometeam>East Carolina</hometeam><awayteam>Southern Miss</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>24</home>
+<away>14</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2671590"><hometeam>Arkansas</hometeam><awayteam>Alabama</awayteam><timeplayed>2012-09-15 20:30:00.0</timeplayed>
+<score>
+<home>0</home>
+<away>52</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667234"><hometeam>Stony Brook</hometeam><awayteam>Syracuse</awayteam><timeplayed>2012-09-15 21:00:00.0</timeplayed>
+<score>
+<home>17</home>
+<away>28</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667235"><hometeam>Portland State</hometeam><awayteam>Washington</awayteam><timeplayed>2012-09-15 21:00:00.0</timeplayed>
+<score>
+<home>13</home>
+<away>52</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667236"><hometeam>Florida International</hometeam><awayteam>UCF</awayteam><timeplayed>2012-09-15 21:00:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>33</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2670955"><hometeam>Miami Ohio</hometeam><awayteam>Boise State</awayteam><timeplayed>2012-09-15 21:00:00.0</timeplayed>
+<score>
+<home>12</home>
+<away>39</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667237"><hometeam>James Madison</hometeam><awayteam>West Virginia</awayteam><timeplayed>2012-09-15 21:30:00.0</timeplayed>
+<score>
+<home>12</home>
+<away>42</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667238"><hometeam>Florida</hometeam><awayteam>Tennessee</awayteam><timeplayed>2012-09-15 23:00:00.0</timeplayed>
+<score>
+<home>37</home>
+<away>20</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667239"><hometeam>South Alabama</hometeam><awayteam>North Carolina State</awayteam><timeplayed>2012-09-15 23:00:00.0</timeplayed>
+<score>
+<home>7</home>
+<away>31</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667240"><hometeam>UTSA</hometeam><awayteam>Georgia State</awayteam><timeplayed>2012-09-15 23:00:00.0</timeplayed>
+<score>
+<home>38</home>
+<away>14</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667241"><hometeam>Cal Poly SLO</hometeam><awayteam>Wyoming</awayteam><timeplayed>2012-09-15 23:00:00.0</timeplayed>
+<score>
+<home>24</home>
+<away>22</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667242"><hometeam>Ohio</hometeam><awayteam>Marshall</awayteam><timeplayed>2012-09-15 23:30:00.0</timeplayed>
+<score>
+<home>27</home>
+<away>24</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667243"><hometeam>UAB</hometeam><awayteam>South Carolina</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>6</home>
+<away>49</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667244"><hometeam>North Texas</hometeam><awayteam>Kansas State</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>21</home>
+<away>35</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667245"><hometeam>Western Kentucky</hometeam><awayteam>Kentucky</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>32</home>
+<away>31</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667246"><hometeam>Arizona State</hometeam><awayteam>Missouri</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>24</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667247"><hometeam>North Carolina Central</hometeam><awayteam>Duke</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>17</home>
+<away>54</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667248"><hometeam>Nicholls State</hometeam><awayteam>Tulsa</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>16</home>
+<away>66</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667249"><hometeam>Middle Tennessee</hometeam><awayteam>Memphis</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>48</home>
+<away>30</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667250"><hometeam>Delaware State</hometeam><awayteam>Cincinnati</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>7</home>
+<away>23</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667251"><hometeam>Rice</hometeam><awayteam>Louisiana Tech</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>37</home>
+<away>56</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667252"><hometeam>New Mexico</hometeam><awayteam>Texas Tech</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>14</home>
+<away>49</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667253"><hometeam>Bowling Green</hometeam><awayteam>Toledo</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>15</home>
+<away>27</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667254"><hometeam>Mississippi State</hometeam><awayteam>Troy State</awayteam><timeplayed>2012-09-16 00:00:00.0</timeplayed>
+<score>
+<home>30</home>
+<away>24</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667255"><hometeam>Northwestern State</hometeam><awayteam>Nevada</awayteam><timeplayed>2012-09-16 00:05:00.0</timeplayed>
+<score>
+<home>34</home>
+<away>45</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667256"><hometeam>Southern California</hometeam><awayteam>Stanford</awayteam><timeplayed>2012-09-16 00:30:00.0</timeplayed>
+<score>
+<home>14</home>
+<away>21</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667257"><hometeam>Florida Atlantic</hometeam><awayteam>Georgia</awayteam><timeplayed>2012-09-16 00:30:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>56</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667258"><hometeam>Idaho</hometeam><awayteam>Louisiana State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>14</home>
+<away>63</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667259"><hometeam>Utah State</hometeam><awayteam>Wisconsin</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>14</home>
+<away>16</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667260"><hometeam>Notre Dame</hometeam><awayteam>Michigan State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>3</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667261"><hometeam>North Dakota State</hometeam><awayteam>San Diego State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>41</home>
+<away>49</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667262"><hometeam>Colorado State</hometeam><awayteam>San Jose State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>20</home>
+<away>40</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667263"><hometeam>Western Illinois</hometeam><awayteam>Iowa State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>3</home>
+<away>37</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667264"><hometeam>Ball State</hometeam><awayteam>Indiana</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>41</home>
+<away>39</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667265"><hometeam>Colorado</hometeam><awayteam>Fresno State</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>14</home>
+<away>69</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667266"><hometeam>New Mexico State</hometeam><awayteam>Texas-El Paso</awayteam><timeplayed>2012-09-16 01:00:00.0</timeplayed>
+<score>
+<home>28</home>
+<away>41</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667267"><hometeam>Texas</hometeam><awayteam>Mississippi</awayteam><timeplayed>2012-09-16 02:15:00.0</timeplayed>
+<score>
+<home>66</home>
+<away>31</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667268"><hometeam>Brigham Young</hometeam><awayteam>Utah</awayteam><timeplayed>2012-09-16 03:00:00.0</timeplayed>
+<score>
+<home>21</home>
+<away>24</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667269"><hometeam>South Carolina State</hometeam><awayteam>Arizona</awayteam><timeplayed>2012-09-16 03:30:00.0</timeplayed>
+<score>
+<home>0</home>
+<away>56</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667270"><hometeam>Houston</hometeam><awayteam>UCLA</awayteam><timeplayed>2012-09-16 03:30:00.0</timeplayed>
+<score>
+<home>6</home>
+<away>37</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+<match id="2667271"><hometeam>Lamar</hometeam><awayteam>Hawaii</awayteam><timeplayed>2012-09-16 05:00:00.0</timeplayed>
+<score>
+<home>2</home>
+<away>54</away>
+<p1home>-1</p1home>
+<p2home>-1</p2home>
+<p3home>-1</p3home>
+<p4home>-1</p4home>
+<p1away>-1</p1away>
+<p2away>-1</p2away>
+<p3away>-1</p3away>
+<p4away>-1</p4away>
+<normaltimehome>-1</normaltimehome>
+<normaltimeaway>-1</normaltimeaway>
+<extratimehome>-1</extratimehome>
+<extratimeaway>-1</extratimeaway>
+</score>
+</match>
+</matchresults>
+
+
+</competition>

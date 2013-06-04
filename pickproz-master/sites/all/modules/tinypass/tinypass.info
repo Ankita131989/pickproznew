@@ -1,0 +1,12 @@
+name = TinyPass
+description = Provides integration between Drupal content and TinyPass.com service
+dependencies[] = date_popup
+dependencies[] = taxonomy
+core = 7.x
+configure = admin/config/tinypass
+
+version = "7.x-1.4"
+core = "7.x"
+project = "tinypass"
+datestamp = "1286469664"
+

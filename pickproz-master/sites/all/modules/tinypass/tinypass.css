@@ -1,0 +1,113 @@
+#tp_node_options .form-text, .tinypass_price_options .form-text {
+	width:auto;
+}
+
+.tinypass_button_holder {
+	text-align:center;
+}
+.tinypass_button_holder .tinypass_access_message {
+	margin-bottom:10px;
+	font-size:1.1em;
+}
+
+.container-inline-date div .form-item{
+	margin-left: 10px;
+}
+
+.container-inline-date div label{
+	margin-left: 10px;
+}
+
+.container-inline-date div{
+	margin-left: 0;
+}
+
+table.small-table {
+	border-collapse: collapse;
+	margin:0px;
+	padding:0px;
+}
+
+table.small-table tbody {
+	border:0 none;
+}
+
+table.small-table td {
+	vertical-align: top;
+	padding-top:0px;
+}
+
+table.small-table .form-item {
+	margin:0px;
+	padding:0px;
+}
+
+.clear {
+	clear:both;
+}
+
+div.st .col{
+	float:left;
+}
+
+.form-item-m-lp, .form-item-m-tp {
+	float:left;
+}
+
+#edit-metered-wrapper, #edit-m-tp-wrapper, #edit-m-lp-wrapper {
+	float:left;
+}
+
+#tinypass_meta_options .form-item {
+	padding:0px;
+	margin:0px;
+}
+
+#tinypass_meta_options .hide {
+	display:none;
+}
+
+#tinypass_meta_options table.tp-table td {
+	padding-left:5px;
+}
+
+#tinypass_meta_options .tp-price-option-form {
+	padding:10px;
+}
+#tinypass_meta_options table.tp-table {
+	margin:0px;
+	border:0px;
+	padding:0px;
+	border: 1px solid #BEBFB9;
+}
+
+table.tp-table {
+	border-collapse: collapse;
+	margin:0px;
+	padding:0px;
+	width:auto;
+}
+
+.no-border {
+	border:0px;
+}
+
+.no-border tbody {
+	border:0px;
+}
+
+
+table.tp-table tbody {
+	border:0 none;
+}
+
+table.tp-table td {
+	vertical-align: top;
+	padding-top:0px;
+}
+
+table.tp-table .form-item {
+	margin:0px;
+	padding:0px;
+}
+

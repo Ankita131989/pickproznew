@@ -1,0 +1,5 @@
+name = Flag auto node 
+description = A module for winner result to mark as good pick
+core = 7.x
+package = Mtoag
+dependencies[] = flag

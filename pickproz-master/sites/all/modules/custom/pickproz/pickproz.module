@@ -1,0 +1,83 @@
+<?php
+/**
+* Implementation of hook_webform_select_options_info().
+* See webform/webform_hooks.php for further information on this hook in the Webform API.
+*/
+function pickproz_webform_select_options_info() {
+  $items = array();
+  $items['one_onehundred'] = array(
+    'title' => t('Numbers 1-200'),
+    'options callback' => 'pickproz_options_one_onehundred'
+  );
+  return $items;
+}
+
+/**
+* Build an options list for use by webforms.
+*/
+function pickproz_options_one_onehundred() {
+  $options = array();
+  for ($x=1; $x <= 200; $x++) {
+    $options[$x] = $x;
+  }
+  return $options;
+}
+
+function pickproz_form_alter(&$form, &$form_state, $form_id) {
+  
+  if ($form_id == 'pick_node_form') {
+  
+ 
+    if (arg(2) != 'edit') {
+      $form['field_pick_mid']['und'][0]['value']['#default_value'] = arg(3);
+    }
+     
+    $form['field_pick_mid']['und'][0]['value']['#type'] = 'hidden';
+    
+    $view_result = views_get_view_result('make_a_pick_lines', 'default', $form['field_pick_mid']['und'][0]['value']['#default_value']);
+    $view_edit_result = views_get_view_result('make_a_pick_edit', 'default', $form['field_pick_mid']['und'][0]['value']['#default_value']);
+    
+    $awayOdds = $view_result[0]->field_field_away_line[0]['raw']['value'];
+    $awayTeam = $view_result[0]->field_field_away_team[0]['raw']['value'];
+    $homeOdds = $view_result[0]->field_field_home_line[0]['raw']['value'];
+    $homeTeam = $view_result[0]->field_field_home_team[0]['raw']['value'];
+
+
+    
+    $awayMline = $view_result[0]->field_field_away_m_line[0]['raw']['value'];
+    $homeMline = $view_result[0]->field_field_home_m_line[0]['raw']['value'];
+    $a = substr("$awayOdds", 0, 1);
+    $b =  substr("$homeOdds", 0, 1);
+    
+    if ($awayOdds) {
+   // $form['field_will_they_win_by_points']['und']['#access'] = 1;
+    if($a == '+')
+    {
+     $round_title = round($awayOdds);
+    }
+    else{
+     $round_title = round($homeOdds);
+     }
+
+   $form['field_will_they_win_by_points']['und']['#title'] = t('Will they Win by ') . $round_title . (' points');
+    $form['field_pick_winner']['und']['#options'] = array(
+          $awayTeam => $awayTeam . ' ( ' . $awayOdds . ' )',
+          $homeTeam => $homeTeam . ' ( ' . $homeOdds . ' )', );       
+     //$path = drupal_get_path('module', '/pickproz');
+    // drupal_add_js($path . '/js/pick.js');
+   //drupal_add_js('jQuery(document).ready(function () { alert("Hello!"); });', 'inline');
+   drupal_add_js('http://go4drupal.com/pickproz-master/sites/all/modules/custom/pickproz/js/pick.js');
+    }
+    else {
+      $form['field_pick_winner']['und']['#options'] = array(
+      	$awayTeam => $awayTeam . ' ( ' . $awayMline . ' )',
+          $homeTeam => $homeTeam . ' ( ' . $homeMline . ' )',
+        );
+        $form['field_will_they_win_by_points']['#access'] = 0;
+    }
+    if (arg(2) == 'edit') {
+      $form['field_pick_winner']['und']['#default_value'] = $view_edit_result[0]->field_field_pick_winner[0]['raw']['value'];
+           }    
+        }
+     }
+

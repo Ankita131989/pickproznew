@@ -1,0 +1,378 @@
+/*
+  LEAGUE(S) DASH
+*/
+.dash {
+  padding: 0.5em;
+  font-size:1em;
+}
+.dash .title {
+  font-size: 1.2em;
+}
+.dash div ul {
+  margin:0 0 0 1em;
+  padding: 0;
+}
+.pickem-league-page {
+  font-size: 0.9em;
+}
+.pickem-league-page .block h2 {
+  color: #494949;
+  font-size: 1.4em;
+  padding-left: 0.5em;
+}
+.pickem-league-page .block {
+  float:left;
+  width:45%;
+  padding: 0 0.5em 0.5em 0;
+  margin: 0 0 0 0.2em;
+}
+.pickem-league-page .block  .data-title{
+  font-weight: bold;
+  text-align:right;
+}
+.skipped {
+  border-top: dotted 3px #000000;
+}
+.skipped-pick {
+  text-decoration: underline;
+  color:#5F5F5F;
+}
+.league-page-messages {
+  clear:both;
+}
+
+/*
+  My league stats block
+*/
+.pickem-league-page .my-league-stats {
+  margin:0;
+  padding:0;
+  border-style: hidden;
+  border-collapse: collapse;
+}
+#block-pickem-league-page-my-league-stats {
+  border-left: 2px solid rgb(150,150,150);
+}
+
+
+table.block_scores {
+  margin-left: 10px;
+}
+table.block_scores td.vis-t {
+  text-align:left;
+}
+table.block_scores td.vis-s {
+  text-align: right;
+  font-family: Courier new, monospace;
+  font-weight: bold;
+}
+table.block_scores td.home-t {
+  padding-left:20px;
+}
+table.block_scores td.home-s {
+  text-align:right;
+  font-family: Courier new, monospace;
+  font-weight: bold;
+}
+
+
+
+
+.pickem th.win, .pickem td.win {
+  border-left: 3px solid #006400;
+  background: #90EE90;
+}
+.pickem table th.loss, .pickem table td.loss {
+  border-left: 3px solid #8B0000;
+  background: #FF7070;
+}
+.pickem table th.tie, .pickem table td.tie {
+  border-left: 3px solid #8B0000;
+  background: #90EE90;
+}
+.pickem table th.bye, .pickem table td.bye {
+  background: lightgray;
+}
+
+
+
+/*
+  GENERAL
+*/
+.warning {
+  color:red;
+}
+
+
+.pickem table {
+  border-style: hidden;
+}
+
+/*
+ GRID TABLE
+*/
+.pickem table.grid {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  border-style: none;
+}
+.pickem table.grid td {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-left: 3px solid #cccccc;
+}
+.pickem table.grid th {
+  padding:0;
+  margin:0;
+  text-align:center;
+}
+.pickem table.grid td.team_head {
+  padding: 1px;
+  text-align: center;
+  font-weight:bold;
+}
+.pickem .grid td.win {
+  background: #90EE90;
+  border-left: 3px solid #006400;
+}
+.pickem .grid td.loss {
+  background: #FF7070;
+  border-left: 3px solid #8B0000;
+}
+.pickem .grid td.tie {
+  background: #FFB6C1;
+  border-left: 3px solid #F08080;
+}
+.pickem .grid td.bye {
+  background: #D3D3D3;
+  border-left: 3px solid black;
+}
+
+
+
+/*
+ * My picks and admin picks tables.
+ */
+table.pickem-mypicks-all td {
+  vertical-align:top;
+  padding-top:3px;
+}
+table.pickem-mypicks-all td.week {
+  vertical-align:middle;
+  text-align: right;
+}
+table.pickem-mypicks-all .picks-float {
+  float:left;
+  margin:5px 0 0 3px;
+  width:60px;
+  border-left: 1px solid black;
+}
+
+table.pickem-mypicks-week td.no-pick div {
+  background-color: #FDFCDC;
+}
+
+
+/*
+ STANDINGS TABLE
+*/
+.pickem table.standings th {
+  text-align: left;
+}
+.pickem table.standings td, .pickem table.standings th.week-numbers {
+  text-align: right;
+}
+.pickem table.standings td {
+  text-align: right;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.pickem table.standings td.users {
+  font-size: 12px;
+  padding-left: 2px;
+  text-align:left;
+}
+.pickem table.standings td.totals {
+  padding:3px;
+  border-right-style: none;
+  font-weight:bold;
+  font-family: Courier new, monospace;
+  font-size: 14px;
+}
+.pickem table.standings td.gamesback {
+  border-left-style: none;
+  padding-left:10px;
+  font-weight:bold;
+  font-family: Courier new, monospace;
+  font-size: 14px;
+}
+.pickem table.standings td.weekly {
+ font-family: Courier new, monospace;
+ font-weight:bold;
+ font-size: 14px;
+}
+.pickem table.standings td.weekly-high {
+  color: green;
+  font-weight:bold;
+}
+.pickem table.standings td.weekly-low {
+  color: red;
+  font-weight:bold;
+}
+
+
+
+/*
+  LEAGUE NAV TABLE
+*/
+.pickem table.league-nav td {
+  vertical-align:top;
+}
+.pickem table.league-nav .col1 {
+  width:35%;
+}
+.pickem table.league-nav .col2 {
+  width:65%;
+}
+
+/*
+  ADMIN SCORES TABLE
+*/
+.pickem table.admin-scores .team-0 {
+  width: 15em;
+}
+.pickem table.admin-scores .team-1 {
+  width: 35em;
+}
+.pickem table.admin-scores .score {
+  width: 125px;
+}
+.pickem table.admin-scores .time {
+  width: 300px;
+}
+
+
+
+/*
+  USER LIST
+*/
+.pickem .user-list-horiz {
+  margin-left: 10px;
+}
+
+/*
+  GAME LIST
+*/
+.pickem .game-list-horiz {
+  float:left;
+  margin:5px 0 0 3px;
+  width:60px;
+  border-left: 2px solid black;
+}
+
+/*
+  LEADERBOARD BLOCK
+*/
+.pickem-league-leaders {
+  margin:0;
+  padding:0;
+  border-style: hidden;
+}
+.pickem-league-leaders td.score {
+  padding-right: 1em;
+  text-align: right;
+}
+.pickem-league-leaders td.user {
+  padding-left: 0.5em;
+  text-align: left;
+}
+
+
+/*
+  this weeks games block
+*/
+.pickem-weeks-games * {
+  margin:0; padding:0;
+  border-style: none;
+}
+.pickem-weeks-games td.team-abbrev {
+  font-size:10px;
+  text-align: right;
+}
+.pickem-weeks-games td.score {
+  padding-right: 5px;
+  font-size:12px;
+  text-align: right;
+  font-family: courier new, monospace;
+}
+
+/*
+ Pick Summary Page
+*/
+.pickem-pick-summary {
+  border-style: none;
+}
+.pickem-pick-summary * {
+  border-style: none;
+  margin: 0; padding: 2px 0 2px 0;
+  font-size: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+.pickem-pick-summary th {
+  line-height: 10px;
+}
+.pickem-pick-summary td.users {
+  border-style: none;
+  padding-left: 2px;
+  text-align:left;
+}
+.pickem-pick-summary td.users a {
+  font-size: 12px;
+}
+.pickem-pick-summary td {
+  border-left: 3px solid #cccccc;
+}
+.pickem-pick-summary td.win {
+  background: #90EE90;
+  border-left: 3px solid #006400;
+}
+.pickem-pick-summary td.loss {
+  background: #FF7070;
+  border-left: 3px solid #8B0000;
+}
+.pickem-pick-summary td.tie {
+  background: #FFB6C1;
+  border-left: 3px solid #F08080;
+}
+.pickem-pick-summary td.bye {
+  background: #D3D3D3;
+  border-left: 3px solid black;
+}
+
+
+/* picks week
+ * -1 is "prefer longnames"
+ */
+.pickem-team-radios-0 div {
+  float:left;
+  width: 15em;
+}
+.pickem-team-radios-1 div {
+  float:left;
+  width: 25em;
+}
+
+.pickem-team-score-diff-0 div {
+  float:left;
+  width: 12em;
+}
+.pickem-team-score-diff-1 div {
+  float:left;
+  width: 25em;
+}
+.pickem-team-score-diff label {
+  display: inline;
+}

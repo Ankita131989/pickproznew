@@ -1,0 +1,14 @@
+
+**Installation:
+
+Tinypass also relies on the date, date_api, taxonomy, and jquery modules, which must be downloaded and
+enabled separately prior to installation of TinyPass module.
+
+1. Unpack the TinyPass folder and contents in the appropriate modules
+directory of your Drupal installation.  This is probably sites/all/modules/
+2. Enable the TinyPass module in the administration tools.
+3. Visit the TinyPass settings page and make appropriate configurations
+   For 6.x: Administer > Site configuration > TinyPass
+	 Enter aid, secret key, and environment mode
+4. Create a node and enbable TinyPass for that node
+5. You can config Tinypass for tags: Administer -> Content management -> Tinypass by terms
